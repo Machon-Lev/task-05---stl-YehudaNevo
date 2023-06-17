@@ -1,0 +1,33 @@
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Compiled Static libraries
+*.lib
+*.a
+
+# Executables
+*.exe
+*.out
+
+# CLion project files
+.idea/
+.cmake/
+cmake-build-*/
+
+# Generated Files
+CMakeLists.txt.user
+
+# macOS specific files
+.DS_Store
