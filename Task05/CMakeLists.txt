@@ -14,7 +14,7 @@ if (MSVC)
     add_compile_options (/W4 /permissive- /Zc:externConstexpr /Zc:inline)
 endif ()
 
-add_executable (Task06)
+add_executable (Task06 src/City.h src/DistanceCalculator.h src/DistanceCalculator.cpp src/City.cpp src/CityReader.h src/CityReader.cpp src/CityDatabase.cpp src/CityDatabase.h)
 
 add_subdirectory (include)
 add_subdirectory (src)
