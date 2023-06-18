@@ -5,26 +5,7 @@
 #include "CityReader.h"
 #include "DistanceCalculator.h"
 
-std::unique_ptr<DistanceCalculator> createCalculator() {
-    std::cout << "Select distance calculation method:\n";
-    std::cout << "1. Euclidean\n";
-    std::cout << "2. Chebyshev\n";
-    std::cout << "3. Manhattan\n";
 
-    int choice;
-    std::cin >> choice;
-
-    switch(choice) {
-        case 1:
-            return std::make_unique<EuclideanCalculator>();
-        case 2:
-            return std::make_unique<ChebyshevCalculator>();
-        case 3:
-            return std::make_unique<ManhattanCalculator>();
-        default:
-            throw std::invalid_argument("Invalid choice");
-    }
-}
 
 int main() {
     CityDatabase db;
